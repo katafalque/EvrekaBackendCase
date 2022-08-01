@@ -1,0 +1,12 @@
+1- A database with TTL feature can be used. TTL allows us to remove the data 
+which is older than any given time. Of course this will only be helpful if the old
+data is no longer needed.
+
+2-I did not use this in my implementation but django's prefetch_related and 
+select_related functions should be used while querying tables with relations.
+In this case, while we are accessing the plate numbers there will be no extra
+query
+
+3- Using raw sql. Instead of using djangos built-in functions to retrive the data
+we can use raw sql query to retrive the data. That way in relational tables we can 
+only get the fields of related tables instead of getting every field.
