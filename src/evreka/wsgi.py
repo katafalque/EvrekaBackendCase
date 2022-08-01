@@ -1,5 +1,5 @@
 """
-WSGI config for evrekaqone project.
+WSGI config for evreka project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'evrekaqone.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'evreka.settings')
 
 application = get_wsgi_application()
